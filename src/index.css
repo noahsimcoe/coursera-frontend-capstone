@@ -10,4 +10,8 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+  display: grid;
+  grid-template-rows: none;
+  grid-template-columns: none;
 }
+

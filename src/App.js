@@ -1,13 +1,17 @@
-import { Header } from '@react-navigation/stack';
+import "./styles.css";
 import './App.css';
+import Header from "./Header";
+import Footer from "./Footer";
+import Nav from "./Nav";
+import Main from "./Main";
 
 function App() {
   return (
     <>
-      <Header/>
-      <Nav/>
-      <Main/>
-      <Footer/>
+    <Header />
+    <Nav />
+    <Main />
+    <Footer />
     </>
   );
 }

@@ -1,0 +1,33 @@
+h1 {
+    font-size: 3em;
+    color: #F4CE14;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.25em;
+    color: #F4CE14;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+li {
+    display: inline;
+    padding: 20px;
+}
+
+.mainstuff {
+    padding: 75px;
+    text-align: center;
+}
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+
