@@ -1,6 +1,8 @@
-const Header = () => {
-    return ( <h1>Welcome to Little Lemon, mother f*ckers</h1>
-    )
-}
+import React from 'react'
+import Navigation from "./Navigation"
 
-export default Header;
+export default function Header() {
+  return (
+    <Navigation />
+  );
+}
