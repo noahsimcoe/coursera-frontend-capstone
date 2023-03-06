@@ -48,3 +48,13 @@ text-align: center;
 .copyright {
 text-align: center;
 }
+
+.special-card {
+display: grid;
+grid-template-columns: 31% 31% 31%;
+gap: 40px;
+}
+
+.price-tag {
+color: #F4CE14;
+}

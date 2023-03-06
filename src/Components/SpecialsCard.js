@@ -1,7 +1,7 @@
 import React from 'react'
-import IceCream from "./Components/Assets/IceCream.jpg"
-import HotFudge from "./Components/Assets/HotFudge.jpg"
-import ChocolateCake from "./Components/Assets/ChocolateCake.jpg"
+import IceCream from "../Components/Assets/IceCream.jpg"
+import HotFudge from "../Components/Assets/HotFudge.jpg"
+import ChocolateCake from "../Components/Assets/ChocolateCake.jpg"
 
 export default function SpecialsCard() {
 
@@ -35,17 +35,22 @@ export default function SpecialsCard() {
         return (
             <>
             <div>
-                <div className="dessert-image">
-                    <img src={image} alt="dessert" width="200"/>
+                <div>
+                    <div className="dessert-image">
+                        <img src={image} alt="dessert" height="200"/>
+                    </div>
+                    <h3>{title}</h3>
+                    <h3 className="price-tag">{price}</h3>
+                    <p>{description}</p>
                 </div>
-                <h3>{title} {price}</h3>
-                <p>{description}</p>
             </div>
             </>
         )
     })
 
   return (
-    <div>{dessertMenuItems}</div>
+    <div className="special-card">
+        {dessertMenuItems}
+    </div>
   )
 }
