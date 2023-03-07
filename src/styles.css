@@ -34,3 +34,37 @@ a:active { text-decoration: none; color: black; }
 * {
     text-align: center;
 }
+
+
+/* below is the css for the reservation form */
+
+.form {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.form label {
+  text-align: left;
+  display: block;
+}
+.form h2 {
+  font-size: 20px;
+  color: #F4CE14;
+  margin-bottom: 30px;
+}
+.form input, .form textarea, .form select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+.form button {
+  background: #F4CE14;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}

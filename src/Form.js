@@ -1,26 +1,55 @@
 import React from 'react'
+import { useState } from "react";
 
 export default function Form() {
+
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [phone, setPhone] = useState("");
+    const [occasion, setOccasion] = useState("Select Occasion");
+    const [guests, setGuests] = useState("");
+    const [datetime, setDatetime] = useState("");
 
     return (
     <>
         <form>
             <div>
-                <div>
+                <div classname="create">
                     <label>Full Name</label>
-                    <input type="text" placeholder="Johnny Appleseed"></input>
+                    <input
+                        type="text"
+                        required
+                        placeholder="Johnny Appleseed"
+                        value={name}
+                        onChange={(e) =>  setName(e.target.value)}>
+                    </input>
                 </div>
                 <div>
                     <label>Email</label>
-                    <input type="text" placeholder="Jappleseed6@gmail.com"></input>
+                    <input
+                        type="text"
+                        required
+                        placeholder="Jappleseed6@gmail.com"
+                        value={email}
+                        onChange={(e) =>  setEmail(e.target.value)}>
+
+                    </input>
                 </div>
                 <div>
                     <label>Telephone</label>
-                    <input type="tel" placeholder="233 00 000 0010"></input>
+                    <input
+                        type="tel"
+                        required
+                        placeholder="233 00 000 0010"
+                        value={phone}
+                        onChange={(e) =>  setPhone(e.target.value)}>
+                    </input>
                 </div>
                 <div>
                     <label>Occasion</label>
-                    <select name>
+                    <select>
+                        value={occasion}
+                        onChange={(e) =>  setOccasion(e.target.value)}
                         <option value="select">Select Occasion</option>
                         <option value="birthday">Birthday</option>
                         <option value="engagement">Engagement</option>
@@ -29,11 +58,22 @@ export default function Form() {
                 </div>
                 <div>
                     <label>Guests</label>
-                    <input type="number" placeholder="2"></input>
+                    <input
+                        type="number"
+                        required
+                        placeholder="2"
+                        value={guests}
+                        onChange={(e) =>  setGuests(e.target.value)}>
+                    </input>
                 </div>
                 <div>
                     <label>Date & Time</label>
-                    <input type="datetime-local"></input>
+                    <input
+                        type="datetime-local"
+                        required
+                        value={datetime}
+                        onChange={(e) =>  setDatetime(e.target.value)}>
+                    </input>
                 </div>
                 <button type="submit">Reserve</button>
             </div>
