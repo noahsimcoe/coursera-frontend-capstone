@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-export default function ReservationList({ reservations, title, handleDelete }) {
+export default function ReservationList({ reservations, title,}) {
 
     return (
     <div>
@@ -10,7 +10,6 @@ export default function ReservationList({ reservations, title, handleDelete }) {
          <div key={x.id}>
             <h2> {x.title} </h2>
             <p>Written by {x.name}</p>
-            <button onClick={() => handleDelete(x.id)}>Delete Reservation</button>
          </div>
         ))}
     </div>

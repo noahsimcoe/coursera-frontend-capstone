@@ -11,23 +11,19 @@ import ReservationList from '../ReservationList'
 
 export default function Home() {
 
-const [reservations, setReservations] = useState([
-  {name: "Noah Simcoe", email: "noahsimcoe@gmail.com", phone: 1234, occasion: "Anniversary", guests: 2, waiter: "Toby", datetime: "7:15pm", id: 1 },
-  {name: "Cody White", email: "codywhite@gmail.com", phone: 5678, occasion: "Birthday", guests: 3, waiter: "Mario", datetime: "8:45pm", id: 2 }
-]);
-
-  const [age, setAge] =useState("54");
-
-  const handleDelete = (id) => {
-    const newReservations = reservations.filter(x => x.id !== id)
-    setReservations(newReservations)
-  }
+const [reservations, setReservations] = useState(null);
 
   // this hook fires upon each re-render (delete, refresh, etc.)
   useEffect(() => {
-    console.log("use effect ran");
-    console.log(age);
-  }, [age]);
+    fetch("http://localhost:8000/reservations")
+      .then(res => {
+        return res.json();
+      })
+      .then(data => {
+        console.log(data);
+        setReservations(data)
+      })
+  }, []);
 
   return (
     <>
@@ -36,9 +32,7 @@ const [reservations, setReservations] = useState([
         <Specials />
         <Footer />
       <div>
-        <ReservationList reservations={reservations} title="All Reservations!" handleDelete={handleDelete}/>
-        <button onClick={() => setAge(69)}>Change Age</button>
-        <p>{age}</p>
+        {reservations && <ReservationList reservations={reservations} title="All Reservations!"/>}
       </div>
     </>
   );
