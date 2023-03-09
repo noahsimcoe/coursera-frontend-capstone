@@ -3,7 +3,7 @@ import Header from "../Components/Header"
 import Footer from "../Components/Footer"
 import HeroSection from "../HeroSection"
 import Specials from "../Components/Specials"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import ReservationList from '../ReservationList'
 
 // the useState hook is used to update values and make the browser interactive
@@ -16,11 +16,18 @@ const [reservations, setReservations] = useState([
   {name: "Cody White", email: "codywhite@gmail.com", phone: 5678, occasion: "Birthday", guests: 3, waiter: "Mario", datetime: "8:45pm", id: 2 }
 ]);
 
+  const [age, setAge] =useState("54");
+
   const handleDelete = (id) => {
     const newReservations = reservations.filter(x => x.id !== id)
     setReservations(newReservations)
   }
 
+  // this hook fires upon each re-render (delete, refresh, etc.)
+  useEffect(() => {
+    console.log("use effect ran");
+    console.log(age);
+  }, [age]);
 
   return (
     <>
@@ -30,7 +37,8 @@ const [reservations, setReservations] = useState([
         <Footer />
       <div>
         <ReservationList reservations={reservations} title="All Reservations!" handleDelete={handleDelete}/>
-        <ReservationList reservations={reservations.filter((x) => x.name === "Noah Simcoe")} title="Noah's Reservations"/>
+        <button onClick={() => setAge(69)}>Change Age</button>
+        <p>{age}</p>
       </div>
     </>
   );
