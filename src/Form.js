@@ -8,11 +8,18 @@ export default function Form() {
     const [phone, setPhone] = useState("");
     const [occasion, setOccasion] = useState("Select Occasion");
     const [guests, setGuests] = useState("");
+    const [waiter, setWaiter] = useState("");
     const [datetime, setDatetime] = useState("");
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const blog = { name, email, phone, occasion, guests, waiter, datetime };
+
+    }
 
     return (
     <>
-        <form>
+        <form onSubmit={handleSubmit}>
             <div>
                 <div classname="create">
                     <label>Full Name</label>
@@ -20,7 +27,7 @@ export default function Form() {
                         type="text"
                         required
                         placeholder="Johnny Appleseed"
-                        value={name}
+                        value={name} // curly brackets means it's a "dynamic" value
                         onChange={(e) =>  setName(e.target.value)}>
                     </input>
                 </div>
@@ -36,7 +43,7 @@ export default function Form() {
                     </input>
                 </div>
                 <div>
-                    <label>Telephone</label>
+                    <label>Number</label>
                     <input
                         type="tel"
                         required
@@ -54,6 +61,7 @@ export default function Form() {
                         <option value="birthday">Birthday</option>
                         <option value="engagement">Engagement</option>
                         <option value="anniversary">Anniversary</option>
+                        <option value="networking event">Networking Event</option>
                     </select>
                 </div>
                 <div>
@@ -65,6 +73,18 @@ export default function Form() {
                         value={guests}
                         onChange={(e) =>  setGuests(e.target.value)}>
                     </input>
+                </div>
+                <div>
+                    <label>Preferred Waiter</label>
+                    <select>
+                        value={waiter}
+                        onChange={(e) => setWaiter(e.target.value)}
+                        <option value="No Preference">No Preference</option>
+                        <option value="Toby">Toby</option>
+                        <option value="Mario">Mario</option>
+                        <option value="Luigi">Luigi</option>
+                        <option value="Dry Bones">Dry Bones</option>
+                    </select>
                 </div>
                 <div>
                     <label>Date & Time</label>
