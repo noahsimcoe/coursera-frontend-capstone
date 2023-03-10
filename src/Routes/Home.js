@@ -18,12 +18,12 @@ export default function Home() {
         <Header />
         <HeroSection />
         <Specials />
-        <Footer />
       <div>
         { error && <div> {error }</div>}
         { isPending && <div>Loading...</div> }
         {reservations && <ReservationList reservations={reservations} title="All Reservations!"/>}
       </div>
+      <Footer />
     </>
   );
 }

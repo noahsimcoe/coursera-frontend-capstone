@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Form() {
 
@@ -10,10 +11,27 @@ export default function Form() {
     const [guests, setGuests] = useState("");
     const [waiter, setWaiter] = useState("");
     const [datetime, setDatetime] = useState("");
+    const [isPending, setIsPending] = useState(false);
+    const navigate = useNavigate();
 
     const handleSubmit = (e) => {
-        e.preventDefault();
+        e.preventDefault(); // prevents the page from refreshing
         const reservation = { name, email, phone, occasion, guests, waiter, datetime };
+
+        setIsPending(true);
+
+        fetch("http://localhost:8000/reservations", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(reservation)
+        }).then(() => {
+            console.log("New reservation submitted")
+            setIsPending(false);
+            // history.go(-1); //going back 1 page through "history"
+            // history.push("/"); //going to specific pages
+            // apparently history no longer works so I will be using "navigate"
+            navigate('/home'); // user is moved to the home page after submitting the form
+        });
     }
 
     return (
@@ -42,7 +60,7 @@ export default function Form() {
                     </input>
                 </div>
                 <div>
-                    <label>Number</label>
+                    <label>Phone Number</label>
                     <input
                         type="tel"
                         required
@@ -94,7 +112,8 @@ export default function Form() {
                         onChange={(e) =>  setDatetime(e.target.value)}>
                     </input>
                 </div>
-                <button type="submit">Reserve</button>
+                {!isPending && <button type="submit">Reserve</button>}
+                {isPending && <button disabled type="submit">Addinf reservation...</button>}
             </div>
         </form>
     </>

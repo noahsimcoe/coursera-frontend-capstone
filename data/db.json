@@ -1,24 +1,54 @@
 {
-    "reservations": [
-        {
-            "name": "Noah Simcoe",
-            "email": "noahsimcoe@gmail.com",
-            "phone": 1234,
-            "occasion": "Anniversary",
-            "guests": 2,
-            "waiter": "Toby",
-            "datetime": "7:15pm",
-            "id": 1
-        },
-        {
-            "name": "Cody White",
-            "email": "codywhite@gmail.com",
-            "phone": 5678,
-            "occasion": "Birthday",
-            "guests": 4,
-            "waiter": "Luigi",
-            "datetime": "8:00pm",
-            "id": 1
-        }
-    ]
+  "reservations": [
+    {
+      "name": "Noah Simcoe",
+      "email": "noahsimcoe@gmail.com",
+      "phone": 1234,
+      "occasion": "Anniversary",
+      "guests": 2,
+      "waiter": "Toby",
+      "datetime": "7:15pm",
+      "id": 1
+    },
+    {
+      "name": "Cody White",
+      "email": "codywhite@gmail.com",
+      "phone": 5678,
+      "occasion": "Birthday",
+      "guests": 4,
+      "waiter": "Luigi",
+      "datetime": "8:00pm",
+      "id": 2
+    },
+    {
+      "name": "Jester Brown",
+      "email": "dontjestme@gmail.com",
+      "phone": 9101,
+      "occasion": "Anniversary",
+      "guests": 1,
+      "waiter": "Mario",
+      "datetime": "5:45pm",
+      "id": 3
+    },
+    {
+      "name": "Eli Stenstrom",
+      "email": "elistenstrom@gmail.com",
+      "phone": "43492",
+      "occasion": "Select Occasion",
+      "guests": "1",
+      "waiter": "",
+      "datetime": "2023-03-10T14:51",
+      "id": 4
+    },
+    {
+      "name": "Keri Simcoe",
+      "email": "keri_simcoe@yahoo.com",
+      "phone": "8162134903",
+      "occasion": "Select Occasion",
+      "guests": "9",
+      "waiter": "",
+      "datetime": "2023-03-10T15:04",
+      "id": 6
+    }
+  ]
 }
