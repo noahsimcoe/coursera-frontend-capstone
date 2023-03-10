@@ -3,27 +3,15 @@ import Header from "../Components/Header"
 import Footer from "../Components/Footer"
 import HeroSection from "../HeroSection"
 import Specials from "../Components/Specials"
-import { useState, useEffect } from "react"
-import ReservationList from '../ReservationList'
+import ReservationList from '../Components/ReservationList'
+import useFetch from '../useFetch'
 
 // the useState hook is used to update values and make the browser interactive
 // the MAP method cycles through objects in an array
 
 export default function Home() {
-
-const [reservations, setReservations] = useState(null);
-
-  // this hook fires upon each re-render (delete, refresh, etc.)
-  useEffect(() => {
-    fetch("http://localhost:8000/reservations")
-      .then(res => {
-        return res.json();
-      })
-      .then(data => {
-        console.log(data);
-        setReservations(data)
-      })
-  }, []);
+  // the "data" in this usage is renamed as "reservations"
+  const { data: reservations, isPending, error } = useFetch("http://localhost:8000/reservations");
 
   return (
     <>
@@ -32,6 +20,8 @@ const [reservations, setReservations] = useState(null);
         <Specials />
         <Footer />
       <div>
+        { error && <div> {error }</div>}
+        { isPending && <div>Loading...</div> }
         {reservations && <ReservationList reservations={reservations} title="All Reservations!"/>}
       </div>
     </>

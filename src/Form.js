@@ -13,8 +13,7 @@ export default function Form() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const blog = { name, email, phone, occasion, guests, waiter, datetime };
-
+        const reservation = { name, email, phone, occasion, guests, waiter, datetime };
     }
 
     return (
