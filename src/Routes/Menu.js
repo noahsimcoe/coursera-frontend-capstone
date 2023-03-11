@@ -1,15 +1,10 @@
 import React from 'react'
+import Dinners from "../Components/Dinners"
 
 export default function Menu() {
   return (
     <>
-    <p>MENU MENU MENU MENU MENU MENU MENU MENU</p>
-    <p>MENU MENU MENU MENU MENU MENU MENU MENU</p>
-    <p>MENU MENU MENU MENU MENU MENU MENU MENU</p>
-    <p>MENU MENU MENU MENU MENU MENU MENU MENU</p>
-    <p>MENU MENU MENU MENU MENU MENU MENU MENU</p>
-    <p>MENU MENU MENU MENU MENU MENU MENU MENU</p>
-    <p>MENU MENU MENU MENU MENU MENU MENU MENU</p>
+    <Dinners />
     </>
   )
 }
