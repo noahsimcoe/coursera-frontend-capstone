@@ -11,6 +11,8 @@ import Reservations from "./Routes/Reservations";
 import {BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import ReservationDetails from "./Components/ReservationDetails";
 import NotFound from "./Routes/NotFound";
+import Header from "./Components/Header.js";
+import Footer from "./Components/Footer.js";
 
 // "Switch" is not used anymore in this newest React update
 // The NOTFOUND thing has to go at the bottom as it's a "catch-all" for any unlisted routes
@@ -18,6 +20,7 @@ import NotFound from "./Routes/NotFound";
 function App() {
   return (
     <>
+        <Header />
         <Router>
           <div>
             <Routes>
@@ -33,6 +36,7 @@ function App() {
             </Routes>
           </div>
         </Router>
+        <Footer />
     </>
   );
 }

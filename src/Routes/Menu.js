@@ -1,12 +1,15 @@
 import React from 'react'
-import Header from "../Components/Header"
-import Footer from "../Components/Footer"
 
 export default function Menu() {
   return (
     <>
-        <Header />
-        <Footer />
+    <p>MENU MENU MENU MENU MENU MENU MENU MENU</p>
+    <p>MENU MENU MENU MENU MENU MENU MENU MENU</p>
+    <p>MENU MENU MENU MENU MENU MENU MENU MENU</p>
+    <p>MENU MENU MENU MENU MENU MENU MENU MENU</p>
+    <p>MENU MENU MENU MENU MENU MENU MENU MENU</p>
+    <p>MENU MENU MENU MENU MENU MENU MENU MENU</p>
+    <p>MENU MENU MENU MENU MENU MENU MENU MENU</p>
     </>
   )
 }

@@ -1,6 +1,4 @@
 import React from 'react'
-import Header from "../Components/Header"
-import Footer from "../Components/Footer"
 import HeroSection from "../HeroSection"
 import Specials from "../Components/Specials"
 import ReservationList from '../Components/ReservationList'
@@ -15,7 +13,6 @@ export default function Home() {
 
   return (
     <>
-        <Header />
         <HeroSection />
         <Specials />
       <div>
@@ -23,7 +20,6 @@ export default function Home() {
         { isPending && <div>Loading...</div> }
         {reservations && <ReservationList reservations={reservations} title="All Reservations!"/>}
       </div>
-      <Footer />
     </>
   );
 }

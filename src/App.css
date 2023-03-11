@@ -91,3 +91,20 @@ margin-bottom: 30px;
   border-radius: 8px;
   cursor: pointer;
 }
+
+.nav-bar {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: auto;
+}
+
+#logo1 {
+  float: left;
+  padding-left: 150px;
+  margin: 0px;
+}
+#logo2 {
+  float: right;
+  padding-right: 150px;
+  margin: 0px;
+}
