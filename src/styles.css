@@ -26,10 +26,10 @@ li {
     text-align: center;
 }
 
-a:link { text-decoration: none; color: black; }
-a:visited { text-decoration: none; color: black; }
-a:hover { text-decoration: none; color: black;}
-a:active { text-decoration: none; color: black; }
+a:link { text-decoration: none; color: #F4CE14; }
+a:visited { text-decoration: none; color: #F4CE14; }
+a:hover { text-decoration: none; color: #F4CE14;}
+a:active { text-decoration: none; color: #F4CE14; }
 
 /* the code below makes everything centered */
 * {
@@ -68,4 +68,8 @@ a:active { text-decoration: none; color: black; }
   padding: 8px;
   border-radius: 8px;
   cursor: pointer;
+}
+
+nav {
+  color:#F4CE14;
 }

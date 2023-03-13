@@ -108,3 +108,11 @@ margin-bottom: 30px;
   padding-right: 150px;
   margin: 0px;
 }
+
+.ml-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  padding-right: 100px;
+  padding-left: 100px;
+}
