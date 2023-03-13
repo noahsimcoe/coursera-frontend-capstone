@@ -57,13 +57,14 @@ export default function DinnerCard() {
         return (
             <>
             <div>
-                <div>
+                <div class="dinnerbox">
                     <div className="dinner-image">
                         <img src={image} alt="dinner" height="200"/>
                     </div>
-                    <h3>{title}</h3>
-                    <h3 className="price-tag">{price}</h3>
-                    <p>{description}</p>
+                    <div class="dinnerpics">
+                        <h3>{title} <div class="price">{price}</div></h3>
+                        <h5>{description}</h5>
+                    </div>
                 </div>
             </div>
             </>

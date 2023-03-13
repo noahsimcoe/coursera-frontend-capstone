@@ -17,7 +17,6 @@ ul {
 }
 
 li {
-    display: inline;
     padding: 20px;
 }
 
@@ -25,11 +24,6 @@ li {
     padding: 50px;
     text-align: center;
 }
-
-a:link { text-decoration: none; color: #F4CE14; }
-a:visited { text-decoration: none; color: #F4CE14; }
-a:hover { text-decoration: none; color: #F4CE14;}
-a:active { text-decoration: none; color: #F4CE14; }
 
 /* the code below makes everything centered */
 * {
@@ -73,3 +67,12 @@ a:active { text-decoration: none; color: #F4CE14; }
 nav {
   color:#F4CE14;
 }
+
+nav li {
+  display: inline;
+}
+
+a:link { text-decoration: none; color: #F4CE14; }
+a:visited { text-decoration: none; color: #F4CE14; }
+a:hover { text-decoration: none; color: #F4CE14;}
+a:active { text-decoration: none; color: #F4CE14; }
