@@ -35,13 +35,13 @@ export default function SpecialsCard() {
         return (
             <>
             <div>
-                <div>
+                <div className="special-card-item">
                     <div className="dessert-image">
                         <img src={image} alt="dessert" height="200"/>
                     </div>
                     <h3>{title}</h3>
                     <h3 className="price-tag">{price}</h3>
-                    <p>{description}</p>
+                    <h5>{description}</h5>
                 </div>
             </div>
             </>
@@ -49,7 +49,7 @@ export default function SpecialsCard() {
     })
 
   return (
-    <div className="special-card">
+    <div className="special-card-container">
         {dessertMenuItems}
     </div>
   )

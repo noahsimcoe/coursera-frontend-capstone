@@ -66,16 +66,6 @@ text-align: center;
 text-align: center;
 }
 
-.special-card {
-display: grid;
-grid-template-columns: 31% 31% 31%;
-gap: 40px;
-}
-
-.price-tag {
-color: #F4CE14;
-}
-
 .create {
 max-width: 400px;
 margin: 0 auto;
@@ -214,6 +204,18 @@ margin-bottom: 30px;
 display: inline-block;
 }
 
+.special-card {
+  display: grid;
+  grid-template-columns: 31% 31% 31%;
+  gap: 40px;
+  }
+
+  .price-tag {
+  color: #f48b14;
+  padding: -25px;
+  margin: -10px;
+  }
+
 .specials h2 {
   text-align: left;
   padding-left: 30px;
@@ -226,4 +228,29 @@ display: inline-block;
   font-size: 14px;
   padding: 8px;
   margin-bottom: 30px;
+}
+
+.special-card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0px;
+  margin-left: 200px;
+  margin-right: 200px;
+  grid-gap: 10px;
+}
+
+.special-card-item {
+  padding-bottom: 5px;
+  margin: 0px;
+  background-color: lightgray;
+  border-radius: 10px;
+}
+
+.dessert-image {
+  padding: 0px;
+  margin: 0px;
+}
+
+.datadata {
+  padding-top: 30px;
 }

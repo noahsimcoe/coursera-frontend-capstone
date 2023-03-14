@@ -15,7 +15,7 @@ export default function Home() {
     <>
         <HeroSection />
         <Specials />
-      <div>
+      <div className='datadata'>
         { error && <div> {error }</div>}
         { isPending && <div>Loading...</div> }
         {reservations && <ReservationList reservations={reservations} title="All Reservations!"/>}

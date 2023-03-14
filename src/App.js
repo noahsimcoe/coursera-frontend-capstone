@@ -12,13 +12,14 @@ import ReservationDetails from "./Components/ReservationDetails";
 import NotFound from "./Routes/NotFound";
 import Header from "./Components/Header.js";
 import Footer from "./Components/Footer.js";
+import { Container } from "react-bootstrap";
 
 // "Switch" is not used anymore in this newest React update
 // The NOTFOUND thing has to go at the bottom as it's a "catch-all" for any unlisted routes
 
 function App() {
   return (
-    <>
+    <Container>
         <Header />
         <Router>
           <div>
@@ -36,7 +37,7 @@ function App() {
           </div>
         </Router>
         <Footer />
-    </>
+    </Container>
   );
 }
 
