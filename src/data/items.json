@@ -1,0 +1,50 @@
+[
+                {
+                    "id": 1,
+                    "name": "Sample",
+                    "price": 9.99,
+                    "imgUrl": "/"
+                },
+                {
+                    "id": 2,
+                    "name": "Sample",
+                    "price": 9.99,
+                    "imgUrl": "/"
+                },
+                {
+                    "id": 3,
+                    "name": "Sample",
+                    "price": 9.99,
+                    "imgUrl": "/"
+                },
+                {
+                    "id": 4,
+                    "name": "Sample",
+                    "price": 9.99,
+                    "imgUrl": "/"
+                },
+                {
+                    "id": 5,
+                    "name": "Sample",
+                    "price": 9.99,
+                    "imgUrl": "/"
+                },
+                {
+                    "id": 6,
+                    "name": "Sample",
+                    "price": 9.99,
+                    "imgUrl": "/"
+                },
+                {
+                    "id": 7,
+                    "name": "Sample",
+                    "price": 9.99,
+                    "imgUrl": "/"
+                },
+                {
+                    "id": 8,
+                    "name": "Sample",
+                    "price": 9.99,
+                    "imgUrl": "/"
+                }
+]

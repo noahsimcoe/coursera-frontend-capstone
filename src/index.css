@@ -136,9 +136,15 @@ margin-bottom: 30px;
   padding-top: 25px;
 }
 
+.dinner-image {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
 .dinner-card {
   display: grid;
-  grid-template-columns: 31% 31% 31%;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 1px;
   padding: 0;
   margin: 0;
@@ -152,6 +158,7 @@ margin-bottom: 30px;
 
 .dinnerbox {
   padding-bottom: 45px;
+
 }
 
 .price {
@@ -159,7 +166,7 @@ margin-bottom: 30px;
 }
 
 .herosection {
-  background-color: #495e57;
+  background-color: hsl(160, 13%, 33%);
   padding-left: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -242,7 +249,8 @@ display: inline-block;
 .special-card-item {
   padding-bottom: 5px;
   margin: 0px;
-  background-color: lightgray;
+  background-color: #495e57;
+  color: white;
   border-radius: 10px;
 }
 
@@ -253,4 +261,43 @@ display: inline-block;
 
 .datadata {
   padding-top: 30px;
+}
+
+.shoppingcart {
+  justify-content: right;
+}
+
+.rounded-circle {
+  border-radius: 30px;
+}
+
+.rounded-circle-bg-danger {
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.about-us {
+  background-color: #495e57;
+  padding-left: 30px;
+}
+
+.about-us h1 {
+  text-align: left;
+  margin-bottom: -15px;
+  padding-bottom: 1px;
+  padding-top: 10px;
+}
+
+.info-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-bottom: 50px;
+  padding-top: 25px;
+}
+
+.characters {
+  color: white;
 }
