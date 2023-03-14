@@ -72,7 +72,13 @@ nav li {
   display: inline;
 }
 
-a:link { text-decoration: none; color: #F4CE14; }
-a:visited { text-decoration: none; color: #F4CE14; }
-a:hover { text-decoration: none; color: #F4CE14;}
-a:active { text-decoration: none; color: #F4CE14; }
+a:link { text-decoration: none; color: black; }
+a:visited { text-decoration: none; color: black ; }
+a:hover { text-decoration: none; color: black ;}
+a:active { text-decoration: none; color: black; }
+
+nav.nav-bar li a:hover {
+  background-color: grey;
+  border-radius: 10px;
+  padding: 5px;
+}

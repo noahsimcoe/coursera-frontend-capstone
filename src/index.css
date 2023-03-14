@@ -111,20 +111,15 @@ margin-bottom: 30px;
 
 .nav-bar {
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
   margin: auto;
 }
 
 #logo1 {
   float: left;
   padding-left: 150px;
-  margin: 0px;
 }
-#logo2 {
-  float: right;
-  padding-right: 150px;
-  margin: 0px;
-}
+
 
 .ml-container {
   display: grid;
@@ -171,4 +166,64 @@ margin-bottom: 30px;
 
 .price {
   color:#F4CE14;
+}
+
+.herosection {
+  background-color: #495e57;
+  padding-left: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1px;
+}
+
+.herosection h1 {
+  text-align: left;
+  margin-bottom: -15px;
+  padding-bottom: 1px;
+  padding-top: 10px;
+}
+
+.herosection h2 {
+  text-align: left;
+  color: white;
+  padding-left: 1px;
+  padding-bottom: -30px;
+}
+
+.herosection p {
+  color: white;
+  text-align: left;
+  padding-bottom: 8px;
+}
+
+.herosection button {
+  margin-left: -90px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  background-color: #F4CE14;
+  font-size: 14px;
+  padding: 8px;
+}
+
+.herosection img {
+  padding-top: 0px;
+  border-radius: 20px;
+}
+
+.specials {
+display: inline-block;
+}
+
+.specials h2 {
+  text-align: left;
+  padding-left: 30px;
+  color: black;
+}
+
+.specials button {
+  border-radius: 15px;
+  background-color: #F4CE14;
+  font-size: 14px;
+  padding: 8px;
+  margin-bottom: 30px;
 }
