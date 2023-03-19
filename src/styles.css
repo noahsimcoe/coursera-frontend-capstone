@@ -34,13 +34,15 @@ li {
 /* below is the css for the reservation form */
 
 .form {
-  max-width: 400px;
-  margin: 0 auto;
+  max-width: 700px;
+  margin: auto;
   text-align: center;
 }
 .form label {
-  text-align: left;
+  text-align: center;
   display: block;
+  color: white;
+  font-weight: bold;
 }
 .form h2 {
   font-size: 20px;
@@ -53,8 +55,9 @@ li {
   margin: 10px 0;
   border: 1px solid #ddd;
   box-sizing: border-box;
-  display: block;
+  display: flex;
 }
+
 .form button {
   background: #F4CE14;
   color: #fff;
@@ -62,6 +65,7 @@ li {
   padding: 8px;
   border-radius: 8px;
   cursor: pointer;
+  
 }
 
 nav {

@@ -37,83 +37,85 @@ export default function Form() {
     return (
     <>
         <form onSubmit={handleSubmit}>
-            <div>
-                <div classname="create">
-                    <label>Full Name</label>
-                    <input
-                        type="text"
-                        required
-                        placeholder="Johnny Appleseed"
-                        value={name} // curly brackets means it's a "dynamic" value
-                        onChange={(e) =>  setName(e.target.value)}>
-                    </input>
-                </div>
-                <div>
-                    <label>Email</label>
-                    <input
-                        type="text"
-                        required
-                        placeholder="Jappleseed6@gmail.com"
-                        value={email}
-                        onChange={(e) =>  setEmail(e.target.value)}>
+            <div class="form-case">
+                <div class="form-fields">
+                    <div class="formblock">
+                        <label>Full Name</label>
+                        <input
+                            type="text"
+                            required
+                            placeholder="Johnny Appleseed"
+                            value={name} // curly brackets means it's a "dynamic" value
+                            onChange={(e) =>  setName(e.target.value)}>
+                        </input>
+                    </div>
+                    <div class="formblock">
+                        <label>Email</label>
+                        <input
+                            type="text"
+                            required
+                            placeholder="Jappleseed6@gmail.com"
+                            value={email}
+                            onChange={(e) =>  setEmail(e.target.value)}>
 
-                    </input>
+                        </input>
+                    </div>
+                    <div class="formblock">
+                        <label>Phone Number</label>
+                        <input
+                            type="tel"
+                            required
+                            placeholder="233 00 000 0010"
+                            value={phone}
+                            onChange={(e) =>  setPhone(e.target.value)}>
+                        </input>
+                    </div>
+                    <div class="formblock">
+                        <label>Occasion</label>
+                        <select>
+                            value={occasion}
+                            onChange={(e) =>  setOccasion(e.target.value)}
+                            <option value="select">Select Occasion</option>
+                            <option value="birthday">Birthday</option>
+                            <option value="engagement">Engagement</option>
+                            <option value="anniversary">Anniversary</option>
+                            <option value="networking event">Networking Event</option>
+                        </select>
+                    </div>
+                    <div class="formblock">
+                        <label>Guests</label>
+                        <input
+                            type="number"
+                            required
+                            placeholder="2"
+                            value={guests}
+                            onChange={(e) =>  setGuests(e.target.value)}>
+                        </input>
+                    </div>
+                    <div class="formblock">
+                        <label>Preferred Waiter</label>
+                        <select>
+                            value={waiter}
+                            onChange={(e) => setWaiter(e.target.value)}
+                            <option value="No Preference">No Preference</option>
+                            <option value="Toby">Toby</option>
+                            <option value="Mario">Mario</option>
+                            <option value="Luigi">Luigi</option>
+                            <option value="Dry Bones">Dry Bones</option>
+                        </select>
+                    </div>
+                    <div class="formblock">
+                        <label>Date & Time</label>
+                        <input
+                            type="datetime-local"
+                            required
+                            value={datetime}
+                            onChange={(e) =>  setDatetime(e.target.value)}>
+                        </input>
+                    </div>
+                    {!isPending && <button type="submit">Reserve</button>}
+                    {isPending && <button disabled type="submit">Addinf reservation...</button>}
                 </div>
-                <div>
-                    <label>Phone Number</label>
-                    <input
-                        type="tel"
-                        required
-                        placeholder="233 00 000 0010"
-                        value={phone}
-                        onChange={(e) =>  setPhone(e.target.value)}>
-                    </input>
-                </div>
-                <div>
-                    <label>Occasion</label>
-                    <select>
-                        value={occasion}
-                        onChange={(e) =>  setOccasion(e.target.value)}
-                        <option value="select">Select Occasion</option>
-                        <option value="birthday">Birthday</option>
-                        <option value="engagement">Engagement</option>
-                        <option value="anniversary">Anniversary</option>
-                        <option value="networking event">Networking Event</option>
-                    </select>
-                </div>
-                <div>
-                    <label>Guests</label>
-                    <input
-                        type="number"
-                        required
-                        placeholder="2"
-                        value={guests}
-                        onChange={(e) =>  setGuests(e.target.value)}>
-                    </input>
-                </div>
-                <div>
-                    <label>Preferred Waiter</label>
-                    <select>
-                        value={waiter}
-                        onChange={(e) => setWaiter(e.target.value)}
-                        <option value="No Preference">No Preference</option>
-                        <option value="Toby">Toby</option>
-                        <option value="Mario">Mario</option>
-                        <option value="Luigi">Luigi</option>
-                        <option value="Dry Bones">Dry Bones</option>
-                    </select>
-                </div>
-                <div>
-                    <label>Date & Time</label>
-                    <input
-                        type="datetime-local"
-                        required
-                        value={datetime}
-                        onChange={(e) =>  setDatetime(e.target.value)}>
-                    </input>
-                </div>
-                {!isPending && <button type="submit">Reserve</button>}
-                {isPending && <button disabled type="submit">Addinf reservation...</button>}
             </div>
         </form>
     </>

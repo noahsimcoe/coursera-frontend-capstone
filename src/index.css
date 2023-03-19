@@ -301,3 +301,32 @@ display: inline-block;
 .characters {
   color: white;
 }
+
+.form-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  justify-content: center;
+}
+
+.form h2 {
+  margin: 0px;
+  padding: 0px;
+}
+
+.form p {
+  margin-top: -20px;
+  margin-bottom: 40px;
+}
+
+.form-case {
+  background-color: #495e57;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.formblock {
+  max-width: 300px;
+}
