@@ -1,6 +1,6 @@
 import React, {useContext} from 'react'
 import { ShopContext } from './Context/shop-context';
-
+import "./shop.css";
 
 export const CartItem = (props) => {
     const {id, image, title, price, description} = props.data;
@@ -9,7 +9,7 @@ export const CartItem = (props) => {
   return (
     <div className="cartItem">
         <img src={image} />
-        <div>
+        <div className="description2">
             <p><b>{title}</b></p>
             <p>{price}</p>
             <div className="countHandler">

@@ -10,16 +10,6 @@ h2 {
     text-align: center;
 }
 
-ul {
-    list-style-type: none;
-    text-align: center;
-    color: #F4CE14;
-}
-
-li {
-    padding: 20px;
-}
-
 .mainstuff {
     padding: 50px;
     text-align: center;
@@ -65,23 +55,4 @@ li {
   padding: 8px;
   border-radius: 8px;
   cursor: pointer;
-}
-
-nav {
-  color:#F4CE14;
-}
-
-nav li {
-  display: inline;
-}
-
-a:link { text-decoration: none; color: black; }
-a:visited { text-decoration: none; color: black ; }
-a:hover { text-decoration: none; color: black ;}
-a:active { text-decoration: none; color: black; }
-
-nav.nav-bar li a:hover {
-  background-color: grey;
-  border-radius: 10px;
-  padding: 5px;
 }

@@ -99,12 +99,6 @@ margin-bottom: 30px;
   cursor: pointer;
 }
 
-.nav-bar {
-  padding-top: 20px;
-  padding-bottom: 5px;
-  margin: auto;
-}
-
 #logo1 {
   float: left;
   padding-left: 150px;
@@ -261,22 +255,6 @@ display: inline-block;
 
 .datadata {
   padding-top: 30px;
-}
-
-.shoppingcart {
-  justify-content: right;
-}
-
-.rounded-circle {
-  border-radius: 30px;
-}
-
-.rounded-circle-bg-danger {
-  background-color: red;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 15px;
 }
 
 .about-us {
