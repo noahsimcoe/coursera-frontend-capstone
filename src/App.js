@@ -3,7 +3,7 @@ import React from "react";
 
 import Home from "./Routes/Home";
 import About from "./Routes/About";
-import Login from "./Routes/Login";
+import Cart from "./Routes/Cart";
 import Menu from "./Routes/Menu";
 import OrderOnline from "./Routes/OrderOnline";
 import Reservations from "./Routes/Reservations";
@@ -13,6 +13,7 @@ import NotFound from "./Routes/NotFound";
 import Header from "./Components/Header.js";
 import Footer from "./Components/Footer.js";
 import { Container } from "react-bootstrap";
+import { ShopContextProvider } from "./Components/Context/shop-context";
 
 // "Switch" is not used anymore in this newest React update
 // The NOTFOUND thing has to go at the bottom as it's a "catch-all" for any unlisted routes
@@ -20,14 +21,15 @@ import { Container } from "react-bootstrap";
 function App() {
   return (
     <Container>
-        <Header />
+        <ShopContextProvider>
         <Router>
+        <Header />
           <div>
             <Routes>
               <Route path = "/" element = {<Home />}/>
               <Route path = "/home" element = {<Home />}/>
               <Route path = "/about" element = {<About />}/>
-              <Route path = "/login" element = {<Login />}/>
+              <Route path = "/cart" element = {<Cart />}/>
               <Route path = "/menu" element = {<Menu />}/>
               <Route path = "/orderonline" element = {<OrderOnline />}/>
               <Route path = "/reservations" element = {<Reservations />}/>
@@ -36,6 +38,7 @@ function App() {
             </Routes>
           </div>
         </Router>
+        </ShopContextProvider>
         <Footer />
     </Container>
   );

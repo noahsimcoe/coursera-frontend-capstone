@@ -13,37 +13,37 @@ export default function DinnerCard() {
         {
             image: BeefShwarma,
             title: "Beef Shwarma Plate",
-            price: "$9.99",
+            price: 9.99,
             description: "Our special shwarma recipe"
         },
         {
             image: BrusselSprouts,
             title: "Brussel Sprouts",
-            price: "$5.99",
+            price: 5.99,
             description: "Served with the best ricotta cheese"
         },
         {
             image: ChickenKabob,
             title: "Chicken Kabobs",
-            price: "$10.99",
+            price: 10.99,
             description: "Served with a side of our special cajuin fries!"
         },
         {
             image: LambKabobs,
             title: "Lamb Kabobs",
-            price: "$11.99",
+            price: 11.99,
             description: "Served with a side of our special cajun fries!"
         },
         {
             image: PitaHummus,
             title: "Pita and Hummus",
-            price: "$8.99",
+            price: 8.99,
             description: "Includes free hummus refills"
         },
         {
             image: Salmon,
             title: "Salmon Entree",
-            price: "$12.99",
+            price: 12.99,
             description: "Freshly caught and imported from Madagascar!"
         },
     ]
